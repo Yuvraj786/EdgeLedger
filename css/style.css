@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+     --theme-color:#93cb52;
+}
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family:Roboto, sans-serif;
+}
+
+a{
+     text-decoration: none;
+}
+
+h1,h2,h3 {
+     font-weight: 600;
+     margin-bottom: 0.25rem 0;
+}
+
+/* Utilities */
+.text-primary {
+     color: var(--theme-color);
+}
+
+.l-heading {
+     font-size: 3rem;
+     margin-bottom: 0.75rem;
+     line-height: 1.1;
+}
+
+.lead {
+     font-size: 1.3rem;
+     margin-bottom: 2rem;
+}
+
+.btn {
+     display: inline-block;
+     color: #fff;
+     background: var(--theme-color);
+     padding: 0.5rem 2rem;
+     border: none;
+     border-radius: 5px;
+}
+
+.btn:hover {
+     background: #7ab436;
+}
+
+.btn-dark {
+     background: #333;
+     color: #fff;
+}
+/* Logo Styling */
+.logo {
+     color: #fff;
+}
+
+/* Navbar */
+#navbar {
+     display: flex;
+     background: #333;
+     justify-content: space-between;
+     padding: 1rem;
+     /* making Sticky */
+     position: sticky;
+     top: 0;
+     z-index: 1;
+}
+
+#navbar ul {
+     list-style: none;
+     display: flex;
+     align-items: center;
+}
+
+#navbar li a {
+     color: #fff;
+     padding: 0.75rem;
+     margin: 0 0.25rem;
+}
+
+#navbar li a:hover {
+     background: var(--theme-color);
+     border-radius: 5px;
+}
+
+/* Showcase Area */
+#showcase {
+     background: #333 url('../img/showcase.jpg')
+     no-repeat center center/cover;
+     height: 100vh;
+     color:#fff;
+     position: relative;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0,0,0,0.5);
+}
