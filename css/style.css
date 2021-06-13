@@ -4,22 +4,23 @@
      --theme-color:#93cb52;
 }
 * {
+    box-sizing: border-box;
     margin: 0; 
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
      font-family:Roboto, sans-serif;
+
 }
 
 a{
      text-decoration: none;
 }
 
-h1,h2,h3 {
+h1,h2,h3 {   
      font-weight: 600;
-     margin-bottom: 0.25rem 0;
+     margin-bottom: 0.25rem 0;    
 }
 
 p {
@@ -47,8 +48,7 @@ p {
 .m-heading {
      font-size: 2rem;
      margin-bottom: 0.75rem;
-     line-height: 1.1;
-     text-align: center;
+     line-height: 1.1;  
 }
 
 .lead {
@@ -74,8 +74,31 @@ p {
      color: #fff;
 }
 
+.bg-light {
+     background: #ddd;
+     color: #333;
+}
+.bg-dark {
+     background: #333;
+     color: #fff;
+}
+.text-center {
+     text-align: center;
+}
 .py-1 {
      padding: 1.5rem 0;
+}
+.p-2 {
+     padding: 2rem;
+}
+
+.list {
+     margin: 0.5rem 0;
+     list-style:none;
+}
+.list li {
+     margin: 0.75rem 0;
+     border-bottom: dotted #444 1px;
 }
 /* Logo Styling */
 .logo {
@@ -139,9 +162,10 @@ p {
 }
 
 /* Section: What we do */
+
 #what .items {
      display: flex;
-     padding: 2rem;
+     padding: 1rem;
 }
 
 #what .items .item {
@@ -150,11 +174,33 @@ p {
 }
 
 /* Styling the icons */
-#what .items .item .mystyle {
-     width: 2rem;
-     height: 2rem;
+#what .items .item i {
+     background: var(--theme-color);
+     padding: 1rem;
      margin-bottom: 1rem;
      border-radius: 50%;
-     background: var(--theme-color);
 }
 
+/* Section: Who we Are */
+#who {
+     display: flex;
+}
+
+#who div {
+     flex: 1;
+}
+
+#who .who-img {
+     background: url('../img/people.jpg') no-repeat
+     center center/cover
+}
+
+/* Section: Clients */
+#clients .items {
+     display: flex;
+}
+#clients .items img {
+     display: block;
+     margin: auto;
+     width: 60%;
+}
