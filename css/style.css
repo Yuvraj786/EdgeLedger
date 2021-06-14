@@ -232,5 +232,9 @@ p {
 }
 
 #contact .contact-form .btn {
+   width: 100%;  
+}
+
+.map {
      width: 100%;
 }
