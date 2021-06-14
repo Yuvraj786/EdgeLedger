@@ -238,6 +238,10 @@ p {
    width: 100%;  
 }
 
+/* Map */
 .map {
      width: 100%;
+}
+
+.MicrosoftMap .NavBar_Container {
 }
